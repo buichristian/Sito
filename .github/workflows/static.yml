@@ -2,7 +2,7 @@ name: Deploy Astro site to Pages
 
 on:
   push:
-    branches: ["master"] # Usa "main" se il tuo branch si chiama main
+    branches: ["master"] # Se il tuo branch principale si chiama "main", scrivi "main" qui
 
   workflow_dispatch:
 
@@ -28,7 +28,6 @@ jobs:
           node-version: 20
 
       - name: Install dependencies & Build
-        # Entra nella sotto-cartella christianbui-dev, installa e compila Astro
         run: |
           cd christianbui-dev
           npm ci
@@ -37,7 +36,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Astro salva i file compilati nella cartella dist/
           path: './christianbui-dev/dist'
 
   deploy:
