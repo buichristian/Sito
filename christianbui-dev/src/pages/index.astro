@@ -178,7 +178,7 @@ import '../styles/global.css';
           <span class="text-xs text-slate-400 font-mono">Score: <span id="game-score" class="text-emerald-400 font-bold">0</span></span>
         </div>
 
-        <div class="relative w-full h-56 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden cursor-pointer" id="game-container">
+        <div class="relative w-full h-56 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden cursor-pointer" id="game-container" style="touch-action: none;">
           <canvas id="game-canvas" class="w-full h-full block"></canvas>
           
           <div id="game-overlay" class="absolute inset-0 bg-slate-950/85 backdrop-blur-sm flex flex-col items-center justify-center p-4 text-center">
@@ -282,6 +282,9 @@ import '../styles/global.css';
       }
 
       window.addEventListener('resize', resizeCanvas);
+      window.addEventListener('orientationchange', () => {
+        setTimeout(resizeCanvas, 100);
+      });
       resizeCanvas();
 
       function jump() {
@@ -306,7 +309,11 @@ import '../styles/global.css';
 
       container?.addEventListener('touchstart', (e) => {
         e.preventDefault();
-        jump();
+        if (!isPlaying && overlay && overlay.style.display !== 'none') {
+          startGame();
+        } else {
+          jump();
+        }
       });
 
       function spawnObstacle() {
