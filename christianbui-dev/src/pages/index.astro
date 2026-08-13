@@ -148,19 +148,23 @@ import '../styles/global.css';
           <span class="text-emerald-400">&gt;</span> Deployment Architecture
         </h2>
         <p class="text-xs text-slate-400">
-          This portfolio is delivered using modern GitOps practices: static site compilation on global edge CDN with zero server management overhead.
+          This portfolio is delivered using modern GitOps practices: automated Astro build pipelines, static site hosting via GitHub Pages, and edge distribution with global CDN performance.
         </p>
-
+      
         <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 overflow-x-auto">
           <div class="text-slate-500 mb-2">// Continuous Deployment Pipeline</div>
-          <div class="flex items-center gap-2 min-w-[500px]">
-            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200">Git Commit</span>
+          <div class="flex items-center gap-2 min-w-[700px]">
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 whitespace-nowrap">Git Commit</span>
             <span class="text-emerald-500">➜</span>
-            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200">GitHub Repository</span>
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 whitespace-nowrap">GitHub Repo</span>
             <span class="text-emerald-500">➜</span>
-            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200">Cloudflare Edge Build</span>
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 whitespace-nowrap">GitHub Actions (Astro Build)</span>
             <span class="text-emerald-500">➜</span>
-            <span class="px-3 py-1.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-bold">christianbui.dev</span>
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 whitespace-nowrap">GitHub Pages</span>
+            <span class="text-emerald-500">➜</span>
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 whitespace-nowrap">Cloudflare CDN</span>
+            <span class="text-emerald-500">➜</span>
+            <span class="px-3 py-1.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-bold whitespace-nowrap">christianbui.dev</span>
           </div>
         </div>
       </section>
