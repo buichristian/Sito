@@ -2,7 +2,7 @@ name: Deploy Astro site to Pages
 
 on:
   push:
-    branches: ["master"] # Se il tuo branch principale si chiama "main", scrivi "main" qui
+    branches: ["master"] # Usa "main" se il tuo branch si chiama main
 
   workflow_dispatch:
 
@@ -25,7 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install dependencies & Build
         run: |
