@@ -1,0 +1,445 @@
+---
+import '../styles/global.css';
+---
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Bui | Systems & DevOps Engineer</title>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen p-4 md:p-12 font-mono selection:bg-emerald-500 selection:text-slate-950">
+    
+    <div class="max-w-4xl mx-auto space-y-10">
+
+      <!-- Header / System Status Bar -->
+      <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-slate-800 bg-slate-900/80 p-4 rounded-xl shadow-lg backdrop-blur">
+        <div class="flex items-center gap-3">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </span>
+          <span class="text-xs font-semibold tracking-wide text-slate-300">SYSTEM_STATUS: <span class="text-emerald-400">OPERATIONAL</span></span>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-slate-400">
+          <span>HOST: <span class="text-slate-200">cloudflare-edge</span></span>
+          <span class="text-slate-600">|</span>
+          <span>REGION: <span class="text-slate-200">global</span></span>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="border border-slate-800 bg-slate-900/40 p-6 md:p-10 rounded-2xl shadow-2xl relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="space-y-4">
+          <div class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-emerald-950/80 border border-emerald-800/50 text-emerald-400 mb-2">
+            Systems & DevOps Engineer
+          </div>
+          <h1 class="text-4xl md:text-5xl font-black tracking-tight text-white">
+            Christian Bui
+          </h1>
+          <p class="text-emerald-400 font-medium text-base md:text-lg leading-relaxed">
+            Enterprise Infrastructure, Cloud & Automation (Azure / K8s / IaC) <br class="hidden sm:inline" />
+            <span class="text-slate-400">&amp; AI &amp; Full-Stack Development</span>
+          </p>
+          <p class="text-slate-300 leading-relaxed text-sm md:text-base max-w-2xl pt-2">
+            Architecting reliable cloud environments, automating mission-critical deployment pipelines, and bridging enterprise infrastructure with modern AI-driven applications.
+          </p>
+        </div>
+
+        <!-- Social & CTAs -->
+        <div class="flex flex-wrap gap-4 pt-8">
+          <a href="https://github.com/buichristian" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-medium transition text-white border border-slate-700">
+            <span>GitHub</span>
+            <span class="text-xs text-slate-400">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/christian-bui-181b321a0/" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-sm font-medium text-white transition shadow-lg shadow-emerald-900/20">
+            <span>LinkedIn</span>
+            <span class="text-xs text-emerald-200">↗</span>
+          </a>
+          <a href="mailto:bui.christian95@gmail.com" class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-sm font-medium text-slate-300 transition border border-slate-800">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- About & Technical Philosophy -->
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 border border-slate-800 bg-slate-900/30 p-6 md:p-8 rounded-2xl space-y-4">
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <span class="text-emerald-400">&gt;</span> Engineering Philosophy
+          </h2>
+          <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+            I specialize in designing and maintaining enterprise cloud infrastructures with a strict focus on **security, reproducibility (IaC)**, and **zero-downtime deployments**.
+          </p>
+          <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+            By combining core Systems Engineering &amp; DevOps capabilities with Full-Stack software engineering and AI integrations, I deliver end-to-end solutions—from underlying cloud provisioning to high-performance user interfaces.
+          </p>
+        </div>
+
+        <div class="border border-slate-800 bg-slate-900/30 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Core Stack</h3>
+            <ul class="text-xs space-y-2 text-slate-300">
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Cloud: Azure Infrastructure</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Containers: Kubernetes, Docker</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> IaC: Terraform</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> CI/CD: GitHub Actions</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> AI &amp; Code: Python, TypeScript</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 text-[10px] text-slate-500">
+            Focus: Resilience &amp; Automation
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects / Case Studies -->
+      <section class="space-y-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-bold text-white flex items-center gap-2">
+            <span class="text-emerald-400">&gt;</span> Featured Case Studies
+          </h2>
+          <span class="text-xs text-slate-500">Production Environments</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="border border-slate-800 bg-slate-900/50 p-6 rounded-2xl space-y-4 hover:border-slate-700 transition group">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-800/40">Azure / AKS / IaC</span>
+              <span class="text-xs text-slate-500">Infrastructure</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition">
+              Automated Kubernetes Cluster Provisioning
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Designed and deployed multi-tenant Azure Kubernetes Service (AKS) environments using Terraform, complete with automated CI/CD deployment pipelines.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-slate-400">
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Terraform</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Kubernetes</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Azure</span>
+            </div>
+          </div>
+
+          <div class="border border-slate-800 bg-slate-900/50 p-6 rounded-2xl space-y-4 hover:border-slate-700 transition group">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-800/40">AI / Full-Stack</span>
+              <span class="text-xs text-slate-500">Application</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition">
+              AI-Driven Enterprise Automation Platform
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Built a scalable Full-Stack application integrating LLM workflows for automated data processing and system metrics analysis.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-slate-400">
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Python</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Astro / Next.js</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">LLM Integration</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Infrastructure Showcase -->
+      <section class="border border-slate-800 bg-slate-900/30 p-6 md:p-8 rounded-2xl space-y-4">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span class="text-emerald-400">&gt;</span> Deployment Architecture
+        </h2>
+        <p class="text-xs text-slate-400">
+          This portfolio is delivered using modern GitOps practices: static site compilation on global edge CDN with zero server management overhead.
+        </p>
+
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 overflow-x-auto">
+          <div class="text-slate-500 mb-2">// Continuous Deployment Pipeline</div>
+          <div class="flex items-center gap-2 min-w-[500px]">
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200">Git Commit</span>
+            <span class="text-emerald-500">➜</span>
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200">GitHub Repository</span>
+            <span class="text-emerald-500">➜</span>
+            <span class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200">Cloudflare Edge Build</span>
+            <span class="text-emerald-500">➜</span>
+            <span class="px-3 py-1.5 rounded bg-emerald-950 border border-emerald-700 text-emerald-300 font-bold">christianbui.dev</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- BORED? IT ESCAPE RUNNER MINIGAME -->
+      <section class="border border-slate-800 bg-slate-900/40 p-6 md:p-8 rounded-2xl space-y-4 relative overflow-hidden">
+        <div class="flex items-center justify-between">
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <span class="text-emerald-400">&gt;</span> Bored? <span class="text-slate-500 text-sm font-normal">IT escape runner from family</span>
+          </h2>
+          <span class="text-xs text-slate-400 font-mono">Score: <span id="game-score" class="text-emerald-400 font-bold">0</span></span>
+        </div>
+
+        <div class="relative w-full h-56 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden cursor-pointer" id="game-container">
+          <canvas id="game-canvas" class="w-full h-full block"></canvas>
+          
+          <div id="game-overlay" class="absolute inset-0 bg-slate-950/85 backdrop-blur-sm flex flex-col items-center justify-center p-4 text-center">
+            <p id="overlay-text" class="text-xs text-slate-200 font-bold mb-1">Schiva le assistenze IT classiche!</p>
+            <p class="text-[11px] text-slate-400 mb-4">Schiva le Stampanti e i Telefoni a terra!<br/>Attento allo <span class="text-amber-400 font-bold">SPID in alto</span>: non saltare mentre ti passa sopra!<br/>Premia <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">SPAZIO</span> o <span class="text-emerald-400 font-bold">TAP</span> per saltare.</p>
+            <button id="start-btn" class="px-5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs transition shadow-lg shadow-emerald-950">
+              Start christian_runner.sh
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer / Contact -->
+      <footer id="contact" class="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2026 Christian Bui • Engineered with Astro &amp; Cloudflare Pages
+        </div>
+        <div class="flex flex-wrap items-center gap-6">
+          <a href="mailto:bui.christian95@gmail.com" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/buichristian" target="_blank" class="hover:text-slate-300 transition">GitHub</a>
+          <a href="https://www.linkedin.com/in/christian-bui-181b321a0/" target="_blank" class="hover:text-slate-300 transition">LinkedIn</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Client-side Runner Game Script -->
+    <script>
+      const canvas = document.getElementById('game-canvas') as HTMLCanvasElement;
+      const ctx = canvas ? canvas.getContext('2d') : null;
+      const overlay = document.getElementById('game-overlay');
+      const overlayText = document.getElementById('overlay-text');
+      const startBtn = document.getElementById('start-btn');
+      const scoreEl = document.getElementById('game-score');
+      const container = document.getElementById('game-container');
+
+      // 1. Load Player Image (/public/me.png)
+      const playerImg = new Image();
+      playerImg.src = '/me.png';
+      let isPlayerImgLoaded = false;
+      playerImg.onload = () => { isPlayerImgLoaded = true; };
+
+      // 2. Load Obstacle Images
+      interface ObstacleDef {
+        id: string;
+        name: string;
+        src: string;
+        img: HTMLImageElement;
+        loaded: boolean;
+        width: number;
+        height: number;
+        isFlying?: boolean;
+      }
+
+      const OBSTACLE_DEFS: ObstacleDef[] = [
+        { id: 'stampante', name: 'STAMPANTE', src: '/stampante.png', img: new Image(), loaded: false, width: 44, height: 44, isFlying: false },
+        { id: 'telefono',  name: 'TELEFONO',  src: '/telefono.png',  img: new Image(), loaded: false, width: 48, height: 48, isFlying: false },
+        { id: 'spid',      name: 'SPID',      src: '/spid.png',      img: new Image(), loaded: false, width: 44, height: 44, isFlying: true }
+      ];
+
+      OBSTACLE_DEFS.forEach(def => {
+        def.img.src = def.src;
+        def.img.onload = () => { def.loaded = true; };
+      });
+
+      let isPlaying = false;
+      let score = 0;
+      let animId: number;
+      let gameSpeed = 4.5;
+
+      // Player properties
+      const player = {
+        x: 50,
+        y: 0,
+        width: 44,
+        height: 52,
+        velocityY: 0,
+        gravity: 0.65,
+        jumpForce: -11.8,
+        isGrounded: true
+      };
+
+      interface Obstacle {
+        x: number;
+        y: number;
+        width: number;
+        height: number;
+        def: ObstacleDef;
+      }
+
+      let obstacles: Obstacle[] = [];
+      let frameCount = 0;
+
+      function resizeCanvas() {
+        if (!canvas) return;
+        canvas.width = canvas.parentElement?.clientWidth || 600;
+        canvas.height = canvas.parentElement?.clientHeight || 220;
+        player.y = canvas.height - player.height - 24;
+      }
+
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      function jump() {
+        if (!isPlaying) return;
+        if (player.isGrounded) {
+          player.velocityY = player.jumpForce;
+          player.isGrounded = false;
+        }
+      }
+
+      // Keyboard & Touch Event Listeners
+      window.addEventListener('keydown', (e) => {
+        if (e.code === 'Space' || e.code === 'ArrowUp') {
+          e.preventDefault();
+          if (!isPlaying && overlay && overlay.style.display === 'none') {
+            startGame();
+          } else {
+            jump();
+          }
+        }
+      });
+
+      container?.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        jump();
+      });
+
+      function spawnObstacle() {
+        if (!canvas) return;
+        const randomDef = OBSTACLE_DEFS[Math.floor(Math.random() * OBSTACLE_DEFS.length)];
+        const groundY = canvas.height - 24;
+
+        let obstacleY = groundY - randomDef.height;
+
+        if (randomDef.isFlying) {
+          obstacleY = groundY - player.height - randomDef.height - 16;
+        }
+
+        obstacles.push({
+          x: canvas.width + 20,
+          y: obstacleY,
+          width: randomDef.width,
+          height: randomDef.height,
+          def: randomDef
+        });
+      }
+
+      function drawPlayer() {
+        if (!ctx) return;
+        if (isPlayerImgLoaded) {
+          ctx.drawImage(playerImg, player.x, player.y, player.width, player.height);
+        } else {
+          ctx.fillStyle = '#10b981';
+          ctx.fillRect(player.x, player.y, player.width, player.height);
+        }
+      }
+
+      function drawObstacle(obs: Obstacle) {
+        if (!ctx) return;
+        if (obs.def.loaded) {
+          ctx.drawImage(obs.def.img, obs.x, obs.y, obs.width, obs.height);
+        } else {
+          ctx.fillStyle = obs.def.isFlying ? '#f59e0b' : '#ef4444';
+          ctx.fillRect(obs.x, obs.y, obs.width, obs.height);
+          ctx.fillStyle = '#ffffff';
+          ctx.font = 'bold 9px monospace';
+          ctx.fillText(obs.def.name, obs.x, obs.y - 4);
+        }
+      }
+
+      function gameLoop() {
+        if (!isPlaying || !canvas || !ctx) return;
+
+        frameCount++;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const groundY = canvas.height - 24;
+
+        // Linea del terreno
+        ctx.strokeStyle = '#334155';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(0, groundY);
+        ctx.lineTo(canvas.width, groundY);
+        ctx.stroke();
+
+        // Fisica Player
+        player.velocityY += player.gravity;
+        player.y += player.velocityY;
+
+        if (player.y >= groundY - player.height) {
+          player.y = groundY - player.height;
+          player.velocityY = 0;
+          player.isGrounded = true;
+        }
+
+        drawPlayer();
+
+        // Spawn ostacoli
+        if (frameCount % Math.max(55, Math.floor(115 - gameSpeed * 5)) === 0) {
+          spawnObstacle();
+        }
+
+        // Movimento e controllo collisioni
+        for (let i = obstacles.length - 1; i >= 0; i--) {
+          const obs = obstacles[i];
+          obs.x -= gameSpeed;
+
+          drawObstacle(obs);
+
+          const margin = 6;
+          if (
+            player.x + margin < obs.x + obs.width &&
+            player.x + player.width - margin > obs.x &&
+            player.y + margin < obs.y + obs.height &&
+            player.y + player.height - margin > obs.y
+          ) {
+            gameOver(obs.def.name);
+            return;
+          }
+
+          if (obs.x + obs.width < 0) {
+            obstacles.splice(i, 1);
+          }
+        }
+
+        // Aumento punteggio e velocità
+        score++;
+        if (scoreEl) scoreEl.textContent = score.toString();
+        if (score % 250 === 0) {
+          gameSpeed += 0.4;
+        }
+
+        animId = requestAnimationFrame(gameLoop);
+      }
+
+      function startGame() {
+        if (overlay) overlay.style.display = 'none';
+        isPlaying = true;
+        score = 0;
+        gameSpeed = 4.5;
+        obstacles = [];
+        frameCount = 0;
+        if (canvas) player.y = canvas.height - player.height - 24;
+        player.velocityY = 0;
+        if (scoreEl) scoreEl.textContent = '0';
+        gameLoop();
+      }
+
+      function gameOver(reason?: string) {
+        isPlaying = false;
+        cancelAnimationFrame(animId);
+        if (overlay) {
+          overlay.style.display = 'flex';
+          const msg = reason ? `Colpito da: ${reason}!` : 'Game Over!';
+          if (overlayText) overlayText.textContent = `${msg} Punteggio finale: ${score}`;
+          if (startBtn) startBtn.textContent = 'Riprova a scappare';
+        }
+      }
+
+      startBtn?.addEventListener('click', startGame);
+    </script>
+
+  </body>
+</html>
